@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Eco Score – Small choices. Bigger impact.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="page">
+
+    <header class="card hero">
+      <h1>Small choices.<br>Bigger impact.</h1>
+    </header>
+
+    <!-- Spacer in the wireframe: drop an illustration or image in here -->
+    <div class="hero-space" aria-hidden="true"></div>
+
+    <section class="score-grid" aria-labelledby="score-title">
+      <div class="card score-info">
+        <h2 id="score-title">Your Eco Score</h2>
+        <!-- Placeholder area from the wireframe: add a chart or summary here -->
+      </div>
+
+      <div class="card score-visual">
+        <div class="score-ring drop" style="--i:0" role="img" aria-label="Eco score 85 out of 100">
+          <span class="score-number" id="scoreNumber" data-target="85">85</span>
+          <span class="score-label">/100 Score</span>
+        </div>
+        <span class="pill pill-praise drop" style="--i:1">Great Job!</span>
+        <span class="pill pill-footprint drop" style="--i:2">Estimated Footprint:<br>3.4 Tons CO<sub>2</sub>e/yr</span>
+      </div>
+    </section>
+
+    <section class="habits" aria-label="Habit scores">
+      <article class="card habit">
+        <div class="habit-head">
+          <h3>Transport Habit</h3>
+          <span class="habit-value"><span class="count" data-target="50">50</span>/100</span>
+        </div>
+        <div class="bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50" aria-label="Transport Habit">
+          <div class="bar-fill" data-value="50"></div>
+        </div>
+        <div class="habit-ends"><span>Solo Gas Driving</span><span>Public Transit / Bike</span></div>
+      </article>
+
+      <article class="card habit">
+        <div class="habit-head">
+          <h3>Home Energy Efficiency</h3>
+          <span class="habit-value"><span class="count" data-target="70">70</span> / 100</span>
+        </div>
+        <div class="bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="70" aria-label="Home Energy Efficiency">
+          <div class="bar-fill" data-value="70"></div>
+        </div>
+        <div class="habit-ends"><span>Standard Fossil Grid</span><span>100% Green / Solar</span></div>
+      </article>
+    </section>
+
+    <section class="card actions-intro" aria-labelledby="actions-title">
+      <h2 id="actions-title">Sustainable Actions</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </section>
+
+    <section class="actions-grid" aria-label="Suggested actions">
+      <article class="card action">
+        <div class="action-head"><span>Digital Habits</span><span>High Impact</span></div>
+        <h3>Adopt Meat-Free Mondays</h3>
+        <p>Shift one day a week to plant-based meals to drastically reduce dietary methane emissions.</p>
+      </article>
+
+      <article class="card action">
+        <div class="action-head"><span>Energy</span><span>Low Impact</span></div>
+        <h3>Switch to LED bulbs</h3>
+        <p>Swap your most-used bulbs for LEDs to cut lighting electricity use.</p>
+      </article>
+    </section>
+
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
